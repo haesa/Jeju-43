@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>DOM 객체 동적 삽입</title>
+<script>
+  var p=document.getElementById('p');
+  p.addEventListener("click", function() {
+    alert("p+이벤트 흐름");
+    
+  }, true)
+
+</script>
+</head>
+<body>
+<h3>정답의 동적 삽입</h3>
+<hr>
+  <p id="p">이벤트가 어디서 시작하여 어디로 흘러가는지
+  <strong id="strong">이벤트 흐름</strong>을 아는 것은 매우 중요하다.
+  </p>
+</body>
+</html>

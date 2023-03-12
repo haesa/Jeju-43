@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>제주4•3바로알기</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/memorial_02.css">
+   <script src="js/header.js"></script>
+   <script src="js/map.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFGo8dc0rXRMqims-4MwMlwyhmvOqItpM&callback=initMap_2&libraries=&v=weekly&region=kr" async></script>
+ </head>
+ <body onload="header();">
+   <div class="wrap">
+     <header id="header" class="main_header"></header>
+     <div class="contents">
+       <aside class="left">
+         <h3>제주 4•3 기념관</h3>
+         <ul>
+           <li><a href="memorial_01.html">4•3 평화기념관</a></li>
+           <li><a href="memorial_02.html">4•3 평화 공원</a></li>
+         </ul>
+       </aside>
+       <section class="right">
+         <header>
+           <img src="img/header.png" alt="불러올 수 없습니다">
+           <h2>평화공원</h2>
+         </header>
+         <div class="explain">
+           <p class="centertxt"><span>“4·3사건의 역사적 의미를 되새겨 희생자의 명예회복 및 평화·인권의 의미와 통일의<br> 가치를 되새길 수 있는 평화와 통일의 성지이자 인권교육의 장”</span></p>
+           <ul class="first">
+             <li>
+               <img src="img/park1.bmp" alt="불러올 수 없습니다">
+               <p>4·3사건으로 인한 제주도 민간인학살과 제주도민의 처절한 삶을 기억하고 추념하며, 화해와 상생의 미래를 열어 가기 위한 평화·인권기념 공원입니다. 제주4·3평화공원 조성은 제주4·3사건에 대한 공동체적 보상의 하나로 이루어졌습니다.</p>
+             </li>
+             <li>
+               <p>1980년대 말 4·3진상규명운동에 매진하던 민간사회단체 등은 진상규명과 함께 지속적으로 위령사업을 요구하였으며 이런 요구에 부응하여 제주도는 1995년 8월 위령공원 조성계획을 발표하였습니다. 이에 몇 년이 지나 2003년 4월 3일 평화공원 기공식이, 2008년 3월 28일 평화기념관이 개관하게 되었습니다.</p>
+               <img src="img/park2.jpg" alt="불러올 수 없습니다">
+             </li>
+           </ul>
+           <div class="sub_contents">
+             <h3 class="tit">관람정보</h3>
+             <p>입장료: 무료<br>관람시간: 09:00 ~18:00<br>휴관일: 매월 첫째, 셋째 월요일 휴관<br>관람문의: 064-710-8461</p>
+          </div>
+          <div class="sub_contents">
+            <h3 class="tit">오시는 길</h3>
+            <p>주소 : 제주특별자치도 제주시 명림로 430<br>시내버스: 제주공항에서 500번 공항버스 이용, 중앙로에서 하차 후, 현대약국 앞 조천방면 정류장에서 1번 공영버스 탑승 (50분 소요)<br>택시: 제주공항에서 소요시간 40분, 20,000원 내외</p>
+            <div id="map" style="width:850px;height:400px;"></div>
+          </div>
+         </div>
+       </section>
+     </div>
+   </div>
+ </body>
+</html>

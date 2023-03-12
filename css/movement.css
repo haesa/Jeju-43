@@ -1,0 +1,127 @@
+/* header */
+.main_header nav  ul li.menu:nth-child(2) {
+  font-weight: bold;
+  color: #ef7370;
+}
+
+/* contents */
+.contents {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+/* left (side menu) */
+.contents .left {
+  float: left;
+  width: 15%;
+  height: 3500px;
+  margin: 50px 50px 0;
+}
+
+/*timeline*/
+.contents .left .timeline{
+  height: 455px; width:20px;
+  background: #DBDBDB;
+  border-radius : 10px;
+  position: sticky;
+  top: 100px;
+  left: 152px;
+}
+.contents .left .timeline .circle {
+  border-radius: 50px;
+  width: 19px; height: 19px;
+  border : 1px solid gray;
+  background: white;
+  position: absolute;
+}
+.contents .left .timeline .circle:hover {
+  border-width: 3px;
+  left: -1.5px;
+}
+.contents .left .timeline .circle a {
+  width: 100%;
+}
+
+/* right */
+.contents .right {
+  float: left;
+  width: 70%;
+}
+.contents .right header {
+  overflow: hidden;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+.contents .right header img {
+  float: left;
+  width: 110px;
+}
+.contents .right header h2 {
+  float: left;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 77.8px;
+}
+.contents .right .explain {
+  margin-left: 75px;
+}
+.contents .right .explain article {
+  width: 860px;
+}
+.contents .right .explain article .tit {
+    font-size: 25px;
+    border-left: 5px solid #e84a4a;
+    padding-left: 8px;
+    margin-bottom: 30px;
+}
+.contents .right .explain article .container {
+    margin-left: 15px;
+    margin-bottom: 150px;
+    line-height: 1.8;
+    background: #F2F2F2;
+    padding: 25px 20px;
+    font-size: 15px;
+    overflow: hidden;
+}
+.contents .right .explain article .container img {
+  float: left;
+}
+.contents .right .explain article .container .txt {
+  float: left;
+}
+.contents .right .explain article .container .p1 {
+  overflow: hidden;
+}
+.contents .right .explain article .container .p1 img {
+  width: 310px;
+  margin-right: 10px;
+}
+.contents .right .explain article .container .p1 .txt {
+  width: 60%;
+  margin-top: 8px;
+}
+.contents .right .explain article#chap4 .container img {
+  float: left;
+  width: 310px;
+}
+.contents .right .explain article#chap4 .container .txt {
+  float: left;
+  width: 60%;
+  margin-right: 10px;
+}
+.contents .right .explain article#chap4 .container .txt a {
+  font-weight: bold;
+  padding: 7px 15px;
+  background: #ED9E9E;
+  color: #fff;
+}
+.contents .right .explain article#chap5 .container img {
+  float: left;
+  width: 320px;
+  margin-right: 10px;
+}
+.contents .right .explain article#chap5 .container .txt {
+  float: left;
+  width: 59%;
+}

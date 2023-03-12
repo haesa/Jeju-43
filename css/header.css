@@ -1,0 +1,40 @@
+/* header */
+.main_header {
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.main_header .logo {
+  float: left;
+  margin-right: 10%;
+}
+.main_header .logo a {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  text-align: center;
+}
+.main_header .logo a span {
+  color: #ef7370;
+}
+.main_header nav {
+  float: left;
+  width: 70%;
+  margin-top: 28.5px;
+  padding: 10px 0;
+  border-top: 1px solid #afabab;
+  border-bottom: 1px solid #afabab
+}
+.main_header nav  ul .menu {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.main_header nav ul .menu a {
+  animation-name : slid-up;
+  animation-duration : 1.5s;
+}
+.main_header nav ul .menu a:hover {
+    color: #fec6c6;
+}

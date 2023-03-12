@@ -1,0 +1,87 @@
+/*animation*/
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* header */
+header.main_header {
+  animation-name : fadeIn;
+  animation-duration : 1.5s;
+}
+.main_header nav  ul li.menu:nth-child(4) {
+  font-weight: bold;
+  color: #ef7370;
+}
+
+/* top */
+.top img{
+    animation-name : fadeIn;
+    animation-duration : 2.5s;
+    display: block;
+    width: 197px;
+    margin: 0 auto;
+    bottom: 30px;
+}
+.top p{
+    animation-name : fadeIn;
+    animation-duration : 2.5s;
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* bottom */
+.bottom {
+  margin-bottom: 50px;
+}
+.bottom p {
+    animation-name : fadeIn;
+    animation-duration : 3s;
+    margin-left: 1220px;
+    margin-bottom:15px;
+}
+.bottom p a{
+    color:#5A78AD;
+    font-weight: 450;
+}
+.bottom p a:hover {
+    color:#FF0000;
+}
+
+/*table*/
+.bottom table {
+    animation-name : fadeIn;
+    animation-duration : 3.5s;
+    border-collapse:collapse;
+    margin: 0 auto;
+}
+.bottom table td, th {
+    text-align: center;
+    padding:10px;
+    width:350px;
+    height : 18px;
+    border-bottom:2px solid #AFABAB;
+}
+.bottom table thead{
+    background:#F3F2F2;
+    border-top: 2px solid #AFABAB;
+}
+.bottom tbody tr:nth-child(even) {
+    background:#F3F2F2;
+}
+.bottom tbody tr:hover{
+    background:#FFE7E7;
+}
+
+/* bottom img */
+.botpic{
+    animation-name : fadeIn;
+    animation-duration : 3.5s;
+    width:200px;
+    position:fixed;
+    bottom:0;
+    right:0;
+
+}

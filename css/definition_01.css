@@ -1,0 +1,135 @@
+/* header */
+.main_header nav  ul li.menu:nth-child(1) {
+  font-weight: bold;
+  color: #ef7370;
+}
+
+/* contents */
+.contents {
+  width: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* left (side menu) */
+.contents .left {
+  float: left;
+  width: 15%;
+  margin: 50px 50px 0;
+  letter-spacing: -1px;
+}
+.contents .left h3 {
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #888;
+  margin-bottom: 30px;
+}
+.contents .left ul li {
+  list-style: circle;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  font-size: 18px;
+}
+.contents .left ul li:nth-child(1) {
+  color: #ff6565;
+}
+.contents .left ul li:hover {
+    color: #ff6565;
+}
+
+/* right */
+.contents .right {
+  float: left;
+  width: 70%;
+}
+.contents .right header {
+  overflow: hidden;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+.contents .right header img {
+  float: left;
+  width: 110px;
+}
+.contents .right header h2 {
+  float: left;
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 77.8px;
+}
+.contents .right article {
+    width: 810px;
+    font-size: 14px;
+    margin-left: 72px;
+    margin-bottom: 150px;
+    padding: 8px 0 8px 20px;
+    border-left: 5px solid black;
+    line-height: 1.6;
+}
+.contents .right ul.explain {
+  padding: 0 50px;
+}
+.contents .right ul.explain li {
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+.contents .right ul.explain li .picture {
+  float: left;
+  width: 20%;
+}
+.contents .right ul.explain li:nth-child(odd) .picture {
+  margin-right: 20px;
+}
+.contents .right ul.explain li:nth-child(even) .picture {
+  margin-left: 20px;
+}
+.contents .right ul.explain li .picture .img {
+    width: 200px;
+}
+.contents .right ul.explain li:nth-child(2) .picture .img {
+  margin-top: 40px;
+}
+.contents .right ul.explain li:nth-child(3) .picture .img {
+  margin-top: 10px;
+}
+.contents .right ul.explain li .picture p {
+  font-size: 120px;
+  font-weight: bold;
+}
+.contents .right ul.explain li .txt {
+  float: left;
+  width: 70%;
+}
+.contents .right ul.explain li .txt h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+.contents .right ul.explain li .txt h3 span {
+  font-weight: bold;
+}
+.contents .right ul.explain li .txt p {
+  line-height: 1.6;
+}
+.contents .right ul.explain li:nth-child(5) .picture {
+  margin-top: 30px;
+}
+.contents .right ul.explain li:last-child .picture {
+  width: 25%;
+  margin-top: 220px;
+}
+.contents .right ul.explain li:last-child .picture .img {
+  width: 250px;
+}
+.contents .right ul.explain li:last-child .txt {
+  width: 65%;
+}
+
+.contents .right .source {
+  margin-left: 800px;
+  margin-bottom: 50px;
+}

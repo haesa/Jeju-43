@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>추념동참하기</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/write.css">
+<script src="js/write.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <form id="reform" action="board.html" method="POST" onreset="alertFunction()" onsubmit="return submitCheck();">
+      <input id="head" type="text" placeholder="제목" onfocus="focusOn(this)" onblur="focusOut(this)">
+      <textarea id="content" placeholder="내용" onfocus="focusOn(this)" onblur="focusOut(this)"></textarea>
+      <input id="writer" type="text" placeholder="작성자" onfocus="focusOn(this)" onblur="focusOut(this)">
+      <input id="rebutton" onclick="return resetCheck()" type="reset" value="reset">
+      <br><br>
+      <input id="subbtn" type="submit" value="입력">
+    </form>
+    <img src="img/flower.png">
+  </div>
+</body>
+</html>

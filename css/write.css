@@ -1,0 +1,64 @@
+/* letter */
+body{
+       background-color: rgba( 238, 238, 238, 0.5 );
+}
+form {
+     width : 406px;
+     height : 589px;
+     margin: 50px auto 0;
+     background: #FBE5D6;
+     padding: 30px 40px;
+     box-sizing: border-box;
+}
+form input {
+     border: none;
+     text-align:center;
+}
+form #head {
+    display: block;
+    width: 100%;
+    height: 26px;
+    margin: 0 auto 25px;
+}
+form #content {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto 15px;
+    text-align:center;
+    border : none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+form #writer {
+    float: left;
+    display: block;
+    width: 96px;
+    height: 26px;
+    margin-right: 10px;
+}
+form #rebutton {
+    float: left;
+    display: block;
+    width: 68px;
+    height: 26px;
+    border-radius: 5px;
+    background: #C5E0B4;
+    color:white;
+    cursor: pointer;
+}
+form #subbtn {
+    display: block;
+    width: 68px;
+    height: 26px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #FF9F9F;
+    color:white;
+    cursor: pointer;
+}
+img{
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:200px;
+}

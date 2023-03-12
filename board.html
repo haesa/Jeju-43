@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>제주4•3바로알기</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/board.css">
+<script src="js/header.js"></script>
+</head>
+<body onload="header();">
+  <div class="wrap">
+    <header id="header" class="main_header"></header>
+    <div class="top">
+      <img src="img/board.png">
+      <p>"제주 4•3, 잊지 않겠습니다"</p>
+    </div>
+
+    <script>
+      if(window.localStorage) {
+            document.write('<div class="bottom">');
+            document.write('<p><a href="write.html">추모 동참하기</a></p>');
+
+            var localStorageArray = new Array();
+            for (j = 0; j < localStorage.length; j++) {
+                localStorageArray[j] = localStorage.key(j)
+            }
+            
+            var localStoragekeyArray = localStorageArray.sort();
+            //table 시작 태그
+            document.write("<table>" + "<thead><tr><th>번호</th><th>제목</th><th>작성자</th></tr></thead>" +"<tbody>");
+
+            //로컬 스토리지의 개수만큼 반복
+            for(i = 0; i < localStorage.length; i++){
+              //키 얻어내기
+              var key = localStoragekeyArray[i];
+              //키를 가져와서 값을 알아내기
+              var retrievedData = localStorage.getItem(key);
+              var contents = JSON.parse(retrievedData);
+             //tr작성
+             document.write("<tr>");
+             document.write("<td>" + (i+1) + "</td>");
+             document.write("<td onclick='showHTML("+ i +")' style='cursor:pointer'>"  + contents[0] + "</td>");
+             document.write("<td>" + contents[1] + "</td>");
+             document.write("</tr>");
+       }
+       //table 끝
+       document.write("</tbody></table></div>");
+      }
+      else {
+        //로컬스토리지를 지원하디 않으면 alert함수 실행
+       alert("지원하지 않습니다.");
+      }
+
+    //key를 매개변수로 받아 키에 맞는 값을 새로운 html을 만들어 새 창에 출력하는 함수
+      function showHTML(i) {
+    	  
+          var key = localStoragekeyArray[i];
+          //키를 가져와서 값을 알아내기
+          var retrievedData = localStorage.getItem(key);
+          var contents = JSON.parse(retrievedData);
+          
+         win = window.open("","outwin");
+         win.document.open();
+         win.document.write("<html><head><meta charset='UTF-8'><title>추념동참글</title>");
+          win.document.write("<link rel='stylesheet' href='css/reset.css'>");
+          win.document.write("<link rel='stylesheet' href='css/show.css'></head>");
+          win.document.write("<body><div class='wrap'>");
+          win.document.write("<section class='form'>");
+          win.document.write("<header class='head'>" + contents[0] + "</header>");
+          win.document.write("<article class='content'>" + contents[2] + "</article>");
+          win.document.write("<div class='writer'>" + contents[1] + "</div>");
+          win.document.write("</section><img src='img/flower.png'>");
+          win.document.write("</div></body></html>");
+          win.document.close();
+      }
+    </script>
+    <img class="botpic" src="img/flower.png">
+  </div>
+</body>
+</html>
